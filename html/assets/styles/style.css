@@ -1,0 +1,236 @@
+@font-face {
+	font-family: ortoRegular;
+	src: url('../fonts/Manrope-Regular.ttf');
+}
+
+@font-face {
+	font-family: ortoBold;
+	src: url('../fonts/Manrope-Bold.ttf');
+}
+
+* {
+	font-family: ortoRegular, serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+	font-family: ortoBold, serif;
+	color: var(--light-black)
+}
+
+p {
+	color: var(--light-black);
+}
+
+:root {
+	--orange: #F15A29;
+	--light-blue: #89C4CD;
+	--dark-orange: #FF9211;
+	--dark-green: #21524E;
+	--black: #000000;
+	--light-black: #4A4A4A;
+	--gray: #BEBEBE;
+	--light-gray: #E0E0E0;
+	--lighter-gray: #F8F8F8;
+	--white: #FFFFFF;
+}
+
+body {
+	background-color: var(--dark-green);
+}
+
+#root {
+	padding: 20px;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	width: 60%;
+	background-color: var(--white);
+	box-shadow: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 20px;
+	margin: 5px;
+}
+
+.header {
+	justify-content: center;
+	background: transparent;
+	box-shadow: none;
+}
+
+.header h1 {
+	color: var(--dark-orange);
+}
+
+.header img {
+	width: 75px;
+	margin-right: 10px;
+}
+
+.global {
+	padding: 0;
+	flex-direction: column;
+	box-shadow: 0 0 11px 0 var(--dark-orange);
+}
+
+.navigation {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation button {
+	width: calc(100%/2);
+	padding: 20px;
+	font-size: 16px;
+	margin: 0;
+	color: var(--orange);
+	background-color: var(--white);
+	border: 0;
+	border-bottom: 1px solid var(--orange);
+	border-radius: 0;
+	cursor: pointer;
+}
+
+.navigation button:hover {
+	color: var(--orange);
+	background-color: var(--light-blue);
+}
+
+.navigation button.active {
+	color: var(--white);
+	background-color: var(--orange);
+}
+
+.contacts {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.contacts table {
+	width: 100%;
+	border: 0;
+	border-spacing: 0;
+}
+
+.contacts table button {
+	padding: 5px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.contacts thead tr {
+	background-color: var(--white);
+	color: var(--light-black);
+	font-size: 18px;
+	line-height: 50px;
+	font-family: ortoBold, serif;
+}
+
+.contacts thead button {
+	font-size: 18px;
+	background-color: var(--white);
+	color: var(--dark-orange);
+}
+
+.contacts tbody tr {
+	background-color: var(--light-gray);
+	color: var(--light-black)
+}
+
+.contacts tbody tr:nth-child(even) {
+	background-color: var(--lighter-gray);
+}
+
+.contacts tbody td {
+	width: 40%;
+	line-height: 30px;
+	padding: 10px;
+	text-align: center;
+}
+
+.contacts tbody td:last-child {
+	width: 20%;
+	text-align: right;
+}
+
+.contacts tbody button {
+	background-color: var(--dark-orange);
+	color: var(--white);
+}
+
+.details {
+	width: 60%;
+	padding: 20px 20%;
+	margin: 0;
+	flex-direction: column;
+}
+
+.details img {
+	padding: 10px;
+	width: 30%;
+}
+
+.details label {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	text-transform: uppercase;
+	color: var(--dark-orange);
+	font-size: 10px;
+}
+
+.details label input {
+	width: 100%;
+	padding: 5px;
+	margin: 5px 0;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid var(--light-black);
+}
+
+.details button {
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	border: none;
+}
+
+.details button.primary {
+	background-color: var(--dark-orange);
+	color: var(--white);
+}
+
+.details button.secondary {
+	background-color: var(--white);
+	color: var(--dark-orange);
+}
+
+.details button.primary:hover, .details button.secondary:hover {
+	background-color: var(--orange);
+	color: var(--white);
+}
+
+.go_button {
+	background-color: var(--dark-orange);
+	color: var(--white);
+	padding: 5px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 100px;
+	width: 200px;
+	height: 40px;
+}
